@@ -150,7 +150,7 @@ export default {
 
   methods: {
     callback() {
-      let requst_data_old = localStorage.getItem('request_data');
+      let requst_data_old = localStorage.getItem('request_data') || '';
 
       let request_data_new_stringlify =  requst_data_old + ( requst_data_old ? ', ' : ' ') + JSON.stringify(this.request);
 
